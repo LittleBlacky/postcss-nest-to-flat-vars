@@ -1,0 +1,44 @@
+{
+  "name": "postcss-nest-to-flat-vars",
+  "version": "1.0.0",
+  "description": "A PostCSS plugin that converts nested CSS structures to flat CSS variables",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src -d dist",
+    "prepublishOnly": "npm run build",
+    "prepare": "node scripts/prepare-publish.js"
+  },
+  "keywords": [
+    "postcss",
+    "postcss-plugin",
+    "css",
+    "variables",
+    "custom-properties",
+    "nest",
+    "flat"
+  ],
+  "author": "LittleBlacky",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "jest": "^29.7.0",
+    "postcss": "^8.4.31"
+  },
+  "peerDependencies": {
+    "postcss": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LittleBlacky/postcss-nest-to-flat-vars"
+  },
+  "bugs": {
+    "url": "https://github.com/LittleBlacky/postcss-nest-to-flat-vars/issues"
+  },
+  "homepage": "https://github.com/LittleBlacky/postcss-nest-to-flat-vars#readme"
+} 

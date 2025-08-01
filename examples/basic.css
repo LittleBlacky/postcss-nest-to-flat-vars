@@ -1,0 +1,38 @@
+/* 输入 CSS */
+theme {
+  colors {
+    primary: #3366ff;
+    secondary: #ff6633;
+    success: #00cc66;
+    warning: #ffaa00;
+    error: #ff3333;
+  }
+  spacing {
+    xs: 4px;
+    sm: 8px;
+    md: 16px;
+    lg: 24px;
+    xl: 32px;
+  }
+  typography {
+    font-sizes {
+      small: 12px;
+      base: 16px;
+      large: 20px;
+      xlarge: 24px;
+    }
+    font-weights {
+      normal: 400;
+      medium: 500;
+      bold: 700;
+    }
+  }
+}
+
+/* 其他 CSS 规则保持不变 */
+.button {
+  background-color: var(--theme-colors-primary);
+  padding: var(--theme-spacing-md);
+  font-size: var(--theme-typography-font-sizes-base);
+  font-weight: var(--theme-typography-font-weights-medium);
+} 
