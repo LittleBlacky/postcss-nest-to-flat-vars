@@ -1,5 +1,7 @@
 # postcss-nest-to-flat-vars
 
+[English](./README_en.md) | 中文
+
 一个将嵌套的 CSS 结构转换为扁平的 CSS 变量的 PostCSS 插件。
 
 ## 功能特性
