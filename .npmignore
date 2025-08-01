@@ -1,8 +1,10 @@
 src/
 __tests__/
-.babelrc
+tsconfig.json
 jest.config.js
 .gitignore
 coverage/
+*.test.ts
+*.spec.ts
 *.test.js
 *.spec.js 

@@ -1,8 +1,8 @@
-const postcss = require('postcss');
-const plugin = require('../src/index.js');
+import postcss from 'postcss';
+import nestToFlatVars, { PluginOptions } from '../src/index';
 
-function run(input, output, opts = {}) {
-  return postcss([plugin(opts)]).process(input, { from: undefined })
+function run(input: string, output: string, opts: PluginOptions = {}) {
+  return postcss([nestToFlatVars(opts)]).process(input, { from: undefined })
     .then(result => {
       // 标准化输出格式，移除多余的空格和换行
       const normalizedResult = result.css.replace(/\s+/g, ' ').trim();
